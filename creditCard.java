@@ -82,11 +82,11 @@ class SliverCardCustomer implements CreditCard
 
 class GoldCardCustomer extends SliverCardCustomer
 {
-    static int cnt;
+    static int count;
     public void increaseLimit()throws IOException
     {
-        cnt++;
-        if(cnt<=3)
+        count++;
+        if(count<=3)
         {
             System.out.println("Enter amount limit to increse : ");
             double amt=Double.parseDouble(br.readLine());
